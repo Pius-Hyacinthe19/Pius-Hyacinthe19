@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Portfolio Pius</title>
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <div id="splash-screen">
+       <h1>Pius NOUHOHEFLIN</h1>
+       <p>Pour trouver sans chercher, il faut avoir longtemps chercher sans trouver.</p>
+       <p>Chargement...</p>
+    </div>
+     
+    <header class="nav-bar">
+       <div class="logo">
+         <img src="img/logo.jpg" alt="Logo">
+         <span class="name">Pius NOUHOHEFLIN</span>
+       </div>
+
+       <nav class="nav-links">
+         <a href="contact.html">M'écrire</a>
+         <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </nav>
+    </header>
+
+    
+    <section class="apropos">
+        <div class="main">
+        <img src="img/P.jpeg">
+        <div class="texte-apropos">
+            <h6>About me</h6>
+            <h5 id="typewriter"></h5>
+            <p>Développeur web et designer passionné, je conçois des interfaces modernes qui allient esthétique et performance. De la maquette à la mise en ligne, je transforme vos idées en expériences digitales qui marquent les esprits.</p>
+
+            <div class="button-groupe">
+                <a href="#biographie">
+                    <button type="button">Ma biographie</button>
+                </a>
+                <a href="#services">
+                    <button type="button">Mes services</button>
+                </a>
+                <a href="#competences">
+                    <button type="button">Mes compétences</button>
+                </a>
+                <a href="#contacter">
+                    <button type="button">Me contacter</button>
+                </a>
+                <a  href="#processus"> 
+                    <button type="button">Me choisir</button>
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="biographie" id="biographie">
+        <h4>Ma biographie</h4>
+
+        <div class="intro">
+            <h6>Naissance d'un révolutionnaire</h6>
+            <p>Pius NOUHOHEFLIN est né le 17 août 2007 à Porto-Novo, dans le sud du Bénin, d'un père et d'une mère béninois. Très vite, dès le bas âge, il découvre les délices de l'informatique et commence à nourrir une passion inédite pour la science qui s'occupe du traitement automatique et rationnel de l'information. Aujourd'hui, il allie intelligence et passion pour explorer et devenir un grand bâtisseur dans la science mère qu'est l'informatique.
+            </p>
+        </div>
+
+        <div class="intro">
+            <h6>Parcours et scolaire et diplomes obtenus.</h6>
+        </div>
+        
+       <div class="timeline">
+           <div class="timeline-container left">
+               <div class="content">
+                 <h2>2017</h2>
+                 <p>Par un parcours brillant et admirable au primaire, Pius décroche son CEP.</p>
+               </div>
+           </div>
+           <div class="timeline-container right">
+               <div class="content">
+                 <h2>2021</h2>
+                 <p>Sans peine avec un esprit de battant, son BEPC a été mis en poche.</p>
+               </div>
+           </div>
+           <div class="timeline-container left">
+               <div class="content">
+                 <h2>2025</h2>
+                 <p>Avec un esprit scientifique et proche de son rêve, il obtient son baccalauréat série D dans une école prestigieuge.</p>
+               </div>
+           </div>
+           <div class="timeline-container right">
+               <div class="content">
+                 <h2>2026</h2>
+                 <p>Détenteur d'un BAC béninois série D, il postule très vite dans une école réputée pour sa rigueur et son travail excellent pour établir ses bases en système d'information et logiciels.</p>
+               </div>
+           </div>
+       </div>
+    </section>
+    
+
+    <section class="services" id="services">
+        
+     <div class="services__container">
+        <h4>Mes services</h4>
+        <div class="services__grid">
+
+        <div class="services__card">
+           <div class="services__icon">⚙️</div>
+           <h5>Installation des systèmes d'exploitations</h5>
+           <p>Que ce soit Windows, Linux ou Ubuntu, je vous les installe selon vos choix. </p>
+        </div>
+
+        <div class="services__card">
+         <div class="services__icon">🌐</div>
+         <h5>Installation Logiciels</h5>
+         <p>De microsoft à vs code, vos difficultés trouvent refuges.</p>
+       </div>
+
+        <div class="services__card">
+          <div class="services__icon">💻</div>
+          <h5>Création des sites web</h5>
+          <p>Je donne vie à vos idées en concevant des interfaces modernes attirantes et interactives.</p>
+       </div>
+
+     </div>
+     </div>
+    </section>
+
+
+
+    <section class="competences" id="competences">
+     <h4>Mes compétences</h4>
+        <p>MICROSOFT : Word, Excel, Accèss</p>
+        <div class="skills-container">
+        <div class="skills microsoft">95%</div>
+        </div>
+     
+        <p>HTML</p>
+        <div class="skills-container">
+        <div class="skills html">90%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="skills-container">
+        <div class="skills css">80%</div>
+        </div>
+
+        <span>C#</span>
+        <div class="skills-container">
+        <div class="skills c-sharp">70%</div>
+        </div>
+
+        <p>SQL</p>
+        <div class="skills-container">
+        <div class="skills sql">70%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="skills-container">
+        <div class="skills js">50%</div>
+        </div>
+
+        <p>PHP</p>
+        <div class="skills-container">
+        <div class="skills php">50%</div>
+        </div>
+    </section>
+
+
+
+    <section class="processus" id="processus">
+       <h4>Pourquoi me choisir ?</h4>
+       <p class="processus-subtitle">Quatre bonnes raisons de me fiare confiance.</p>
+
+       <div class="processus-container">
+
+            <div class="processus-item">
+            <div class="processus-numero">01</div>
+            <div class="processus-contenu">
+                <h5>Qualité & Modernité</h5>
+                <p>Des interfaces soignées, modernes et adaptées à tous les écrans pour impressionner vos visiteurs dès le premier regard.</p>
+            </div>
+            </div>
+
+            <div class="processus-item">
+                    <div class="processus-numero">02</div>
+                    <div class="processus-contenu">
+                         <h5>Rapidité & Efficacité</h5>
+                         <p>Vos projets livrés dans les délais convenus, sans compromis sur la qualité ni sur les détails.</p>
+                    </div>
+            </div>
+
+            <div class="processus-item">
+                    <div class="processus-numero">03</div>
+                    <div class="processus-contenu">
+                     <h5>Ecoute & Personnalisation</h5>
+                     <p>Chaque projets est unique. J'adapte mon travail à vos besoins, vos goûts et votre vision pour un résultat qui épatant.</p>
+                    </div>
+            </div>
+
+            <div class="processus-item">
+                <div class="processus-numero">04</div>
+                <div class="processus-contenu">
+                    <h5>Passion & Engagement</h5>
+                    <p>Informatique, design, création, c'est ma passion depuis l'enfance. Vous bénéficiez d'un travail fait avec le cœur pas juste pour de l'argent.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contacter" id="contacter">
+     <h4>Me contacter</h4>
+     <p>Restez connecté sur mes réseaux sociaux pour ne rien manquer !</p>
+
+     <div class="social-container">
+        <a href="https://www.facebook.com/profile.php?id=61587537865362" class="social-btn facebook" title="Facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.tiktok.com/@hyacinthe7383?_r=1&_t=ZS-971gpXVem00" class="social-btn tiktok" title="TikTok" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/hyacinthe_nhf?igsh=ajdsb2o5MXdiM25t" class="social-btn instagram" title="Instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/22999101033" class="social-btn whatsapp" title="WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+         <a href="https://www.linkedin.com/in/pius-hyacinthe-nouhoheflin-9608693b2?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-btn Linkedin" title="Linkedin" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+         <a href="mailto:nouhoheflinpiushyacinthe@gmail.com" class="social-btn gmail" title="Gmail" target="_blank">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+     </div>
+    </section>
+
+    <div class="footer-bottom">
+     © 2026. Tous droits réservés. Powered by Pius NOUHOHEFLIN.
+    </div>
+
+    <button id="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆️</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
